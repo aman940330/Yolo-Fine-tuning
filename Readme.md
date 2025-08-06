@@ -6,7 +6,7 @@ This repository contains code to train a YOLOv11 model using the Ultralytics fra
 
 ## Requirements
 
-Install the required libraries:
+Install the required libraries in an environment:
 
 ```bash
 pip install ultralytics opencv-python
@@ -21,7 +21,7 @@ pip install ultralytics opencv-python
 
 ## Image Inference
 
-### `image_inference.py`
+### `yolo11_image_simple.py`
 
 This script:
 
@@ -30,7 +30,7 @@ This script:
 * Draws bounding boxes and class labels
 
 ```bash
-python image_inference.py
+python yolo11_image_simple.py
 ```
 
 Modify the image path in the script:
@@ -48,35 +48,35 @@ image_path = 'test_yolo_image2.jpg'
 
 ## Simple Image Inference
 
-### `image_inference_simple.py`
+### `yolo11_image_simple.py`
 
 A simpler version using the `.plot()` method from the Ultralytics results object for fast annotation.
 
 ```bash
-python image_inference_simple.py
+python yolo11_image_simple.py
 ```
 
 ---
 
 ## Video Inference
 
-### `video_inference.py`
+### `yolo11_video.py`
 
 * Loads a video file
 * Performs object detection frame-by-frame
-* Annotates and saves the result to `output_lion1.mp4`
+* Annotates and saves the result to `output_video.mp4`
 
 ```bash
-python video_inference.py
+python yolo11_video.py
 ```
 
 Update the input video path in the script:
 
 ```python
-video_path = 'lion_video2.mp4'
+video_path = 'yolo_test.mp4'
 ```
 
-### `video_inference_simple.py`
+### `yolo11_video.py`
 
 A compact version of the video inference pipeline.
 
@@ -84,12 +84,12 @@ A compact version of the video inference pipeline.
 
 ## Model Training
 
-### `train_yolov11.py`
+### `yolo11_video_custom.py`
 
 Trains the YOLOv11 model on a custom dataset using the Ultralytics format:
 
 ```bash
-python train_yolov11.py
+python yolo11_video_custom.py
 ```
 
 Update this line with the correct dataset YAML path:
