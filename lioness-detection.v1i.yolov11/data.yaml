@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['lioness']
+
+roboflow:
+  workspace: udemylioness
+  project: lioness-detection
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/udemylioness/lioness-detection/dataset/1
